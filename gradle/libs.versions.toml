@@ -10,7 +10,7 @@ material = "1.2.1"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
 lifecycle = "2.2.0"
-room = "2.2.5"
+room = "2.5.0"
 coroutines = "1.3.5"
 retrofit = "2.6.0"
 okhttp = "4.5.0"
@@ -27,8 +27,11 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }  # ViewModel KTX
-androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }  # Room runtime
-androidxroomcompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }  # Room compiler for kapt
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-coroutines = { group = "androidx.room", name = "room-coroutines", version.ref = "room" }
+
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 kotlinxcoroutinescore = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }  # Core coroutines
 kotlinxcoroutinesandroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }  # Android coroutines
 androidxlifecycleruntime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }  # Lifecycle runtime KTX

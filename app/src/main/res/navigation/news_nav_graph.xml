@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/breakingNewsFragment2"
-        android:name="com.example.mvvmnewapp.ui.fragment.BreakingNewsFragment"
+        android:name="com.example.mvvmnewapp.MvvmApp.fragment.BreakingNewsFragment"
         android:label="BreakingNewsFragment" >
         <action
             android:id="@+id/action_breakingNewsFragment2_to_articleFragment2"
@@ -23,7 +23,7 @@
         android:label="ArticleFragment" />
     <fragment
         android:id="@+id/savedNewsFragment2"
-        android:name="com.example.mvvmnewapp.ui.fragment.SavedNewsFragment"
+        android:name="com.example.mvvmnewapp.MvvmApp.fragment.SavedNewsFragment"
         android:label="SavedNewsFragment"
         >
         <action

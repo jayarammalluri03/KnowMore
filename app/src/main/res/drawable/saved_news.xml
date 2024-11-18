@@ -5,7 +5,15 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
 
+    <!-- Red background for urgency -->
     <path
-        android:fillColor="#FF0000"
+        android:fillColor="#D32F2F"
+    android:pathData="M17,3H7c-1.1,0-2,0.9-2,2v16l7-4l7,4V5c0-1.1-0.9-2-2-2zm0,2v14.1l-5-2.9l-5,2.9V5h10z"/>
+
+    <!-- Optional: Black stroke outline for better visibility -->
+    <path
+        android:strokeColor="#000000"
+    android:strokeWidth="0.5"
+    android:fillColor="@android:color/white"
     android:pathData="M17,3H7c-1.1,0-2,0.9-2,2v16l7-4l7,4V5c0-1.1-0.9-2-2-2zm0,2v14.1l-5-2.9l-5,2.9V5h10z"/>
 </vector>

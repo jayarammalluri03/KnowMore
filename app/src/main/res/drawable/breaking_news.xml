@@ -5,13 +5,13 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
 
-    <!-- Background Circle -->
+    <!-- Red circle background to symbolize urgency -->
     <path
         android:fillColor="#FF0000"
-        android:pathData="M12,2C6.48,2 2,6.48 2,12h4c0-4.41 3.59-8 8-8s8,3.59 8,8h4c0-5.52-4.48-10-10-10z"/>
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2z" />
 
-    <!-- Bell Shape -->
+    <!-- White exclamation mark to represent Breaking News -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M12,22c1.1,0 2-0.9 2-2h-4c0,1.1 0.9,2 2,2zm6-4c-1.11,0-2.08-0.39-2.88-1.05C14.7,16.58 12,14.47 12,12V9c0-2.21 1.79-4 4-4s4,1.79 4,4v3c0,2.47-2.7,4.58-3.12,4.95C14.08,17.61 13.11,18 12,18z"/>
+        android:pathData="M12,7V14M12,17V19M12,7C12.55,7 13,7.45 13,8C13,8.55 12.55,9 12,9C11.45,9 11,8.55 11,8C11,7.45 11.45,7 12,7z" />
 </vector>

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
@@ -13,12 +14,12 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
+
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,6 +37,9 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -47,7 +51,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.room.runtime)
-
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler)
     // Retrofit and OkHttp dependencies
     implementation(libs.retrofit)
     implementation(libs.convertergson)
@@ -59,4 +64,8 @@ dependencies {
 
     // Glide dependencies
     implementation(libs.glide)
+    kapt(libs.glide.compiler)
+    implementation(libs.kotlinxcoroutinescore)
+    implementation(libs.kotlinxcoroutinesandroid)
+    implementation(libs.androidxlifecycleruntime)
 }
